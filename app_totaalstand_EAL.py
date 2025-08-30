@@ -10,7 +10,7 @@ st.title("🏆 Total ranking – EAL League")
 # 📁 GitHub-bestand
 url = "https://raw.githubusercontent.com/yannick-dartcounter/EAL-League/main/totaalstand_EAL1_EAL8.xlsx"
 
-@st.cache_data(ttl=10)
+@st.cache_data(ttl=1)
 def laad_excel_van_github(url):
     response = requests.get(url)
     response.raise_for_status()
@@ -67,5 +67,6 @@ st.dataframe(
     use_container_width=True,
     height=len(df) * 35
 )
+
 
 
