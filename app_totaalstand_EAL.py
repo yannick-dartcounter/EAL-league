@@ -4,8 +4,8 @@ import requests
 from io import BytesIO
 from datetime import datetime
 
-st.set_page_config(page_title="EAL League Total ranking", layout="wide")
-st.title("🏆 Total ranking – EAL League")
+st.set_page_config(page_title="EDT End Of Summer League Total ranking", layout="wide")
+st.title("🏆 Total ranking – EDT End Of Summer League")
 
 # 📁 GitHub-bestand
 url = "https://raw.githubusercontent.com/yannick-dartcounter/EAL-League/main/totaalstand_EAL1_EAL8.xlsx"
@@ -67,6 +67,7 @@ st.dataframe(
     use_container_width=True,
     height=len(df) * 35
 )
+
 
 
 
