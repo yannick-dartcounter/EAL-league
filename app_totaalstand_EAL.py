@@ -8,7 +8,7 @@ st.set_page_config(page_title="EDT End Of Summer League Total ranking", layout="
 st.title("🏆 Total ranking – EDT End Of Summer League")
 
 # 📁 GitHub-bestand
-url = "https://raw.githubusercontent.com/yannick-dartcounter/EAL-League/main/totaalstand_EAL1_EAL8.xlsx"
+url = "https://raw.githubusercontent.com/yannick-dartcounter/EDT-End-Of-Summer-League/main/totaalstand_EAL1_EAL8.xlsx"
 
 @st.cache_data(ttl=10)
 def laad_excel_van_github(url):
@@ -67,6 +67,7 @@ st.dataframe(
     use_container_width=True,
     height=len(df) * 35
 )
+
 
 
 
